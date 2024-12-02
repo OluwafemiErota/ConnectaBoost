@@ -1,0 +1,14 @@
+.button-yellow:hover {
+  background-color: #fff;
+  /* outline-color: #fab12f; */
+  color: #fab12f;
+  border-width: 1px;
+  border-color: #fab12f;
+  transition: 0.3s ease-in-out;
+}
+.button-blue:hover {
+  background-color: #fff;
+  color: #133e87;
+  border: 1px solid #133e87;
+  transition: 0.3s ease-in-out;
+}
