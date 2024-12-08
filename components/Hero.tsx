@@ -2,40 +2,44 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="flex justify-between gap-2 relative py-6 px-4 md:px-8 mx-6 bg-[#C1BAA1] gap-6 md:flex-col sm:flex-col basis-[35/100] hero-image">
-      <div className="flex flex-col gap-4 justify-between">
-        <div>
-          <h1 className="text-5xl font-bold">
-            Empower Your <span className="text-[#FFF]">Growth </span> With{" "}
-            <br /> Affliate Marketing that works
-          </h1>
-          <p className="">
-            Connect, promote, and grow with a platform designed to help
-            businesses and affiliates achieve success through seamless
-            partnerships and real-time performance insights
-          </p>
-        </div>
+    <div className="flex flex-col md:flex-row justify-between items-center py-12 px-4 sm:px-6 lg:px-8 gap-10">
+      {/* Left Side: Text and Buttons */}
+      <div className="flex flex-col gap-6 md:w-1/2">
+        <h1 className="text-2xl md:text-5xl font-bold text-[#2D2D2D]">
+          Empower Your Growth with <br />
+          Affiliate Marketing that Works
+        </h1>
+        <p className="text-lg text-[#4a4a4a]">
+          Connect, promote, and grow with a platform designed to help businesses
+          and affiliates achieve success through seamless partnerships and
+          real-time performance insights.
+        </p>
 
-        <a
-          href="/sign up"
-          className="w-28 py-3 px-2.5 bg-[#FAB12F] text-white button-yellow rounded-md text-center text-xs font-light inline-block"
-        >
-          Sign Up
-        </a>
-        <a
-          href="/log in"
-          className="w-28 py-3 px-2.5 bg-[#133e87] text-white button-blue rounded-md text-center text-xs font-light inline-block"
-        >
-          Login
-        </a>
+        {/* Sign Up and Login Buttons */}
+        <div className="flex gap-6 items-center">
+          <a
+            href="/AdvertiserSignup"
+            className="py-2 px-6 bg-[#FAB12F] text-white rounded-md text-center text-sm font-medium hover:bg-[#e6a922] transition-all duration-200"
+          >
+            Increase online Sales
+          </a>
+          <a
+            href="/PublisherSignup"
+            className="py-2 px-6 bg-[#133e87] text-white rounded-md text-center text-sm font-medium hover:bg-[#0f2e65] transition-all duration-200"
+          >
+            Monetize your content
+          </a>
+        </div>
       </div>
-      <div className="hero-image basis-[3/5]">
+
+      {/* Right Side: Image */}
+      <div className="w-full md:w-1/2 flex justify-center">
         <Image
-          src={"/src/Img/Image2.jpg"}
-          width={400}
+          src={"/Images/Image2.jpg"}
+          alt="Affiliate Marketing"
+          width={600}
           height={400}
-          alt="Image-logo"
-          className="rounded-[6px]"
+          className="rounded-lg shadow-lg"
         />
       </div>
     </div>

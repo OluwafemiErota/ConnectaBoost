@@ -1,6 +1,7 @@
 "use client";
 import Hero from "@/components/Hero";
-import Navbar from "../components/Navbar";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/footer";
 import "../styles/style.css";
 
 export default function Home() {
@@ -10,6 +11,9 @@ export default function Home() {
       <main className="md-pb-10">
         <Hero />
       </main>
+      <footer className="">
+        <Footer />
+      </footer>
     </div>
   );
 }
